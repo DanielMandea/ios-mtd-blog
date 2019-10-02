@@ -1,0 +1,1217 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0E96F5233FAFFA007E0EC9 /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E96F4233FAFFA007E0EC9 /* ImageLoaderTests.swift */; };
+		6D27E7542344A27800391A80 /* BlogPostImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27E7532344A27800391A80 /* BlogPostImage.swift */; };
+		6D27E7562344A3C100391A80 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27E7552344A3C100391A80 /* AppConstants.swift */; };
+		6D27E7592344AF7200391A80 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27E7582344AF7200391A80 /* CreateViewModel.swift */; };
+		6D27E75C2344B3B600391A80 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27E75B2344B3B600391A80 /* ImagePickerView.swift */; };
+		6D27E75E2344C8CC00391A80 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D535487233F77900018D82D /* ListViewModel.swift */; };
+		6D27E75F2344C8D000391A80 /* BlogPostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D53548A233F7ECE0018D82D /* BlogPostItem.swift */; };
+		6D27E7602344C8D300391A80 /* BlogPostImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27E7532344A27800391A80 /* BlogPostImage.swift */; };
+		6D27E7612344C8E100391A80 /* BlogPostIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D89E4F02340AC07005DFCA7 /* BlogPostIdentifiable.swift */; };
+		6D27E7622344C9C400391A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529347232149610075D107 /* ContentView.swift */; };
+		6D3090C4233FF03F001A734A /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3090C3233FF03F001A734A /* RequestError.swift */; };
+		6D4618F923439E25006BC3B1 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4618F823439E25006BC3B1 /* CreateView.swift */; };
+		6D529344232149610075D107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529343232149610075D107 /* AppDelegate.swift */; };
+		6D529346232149610075D107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529345232149610075D107 /* SceneDelegate.swift */; };
+		6D52934A232149640075D107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D529349232149640075D107 /* Assets.xcassets */; };
+		6D52934D232149640075D107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D52934C232149640075D107 /* Preview Assets.xcassets */; };
+		6D529350232149640075D107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D52934E232149640075D107 /* LaunchScreen.storyboard */; };
+		6D52935B232149640075D107 /* MTDBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D52935A232149640075D107 /* MTDBlogTests.swift */; };
+		6D529366232149640075D107 /* MTDBlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529365232149640075D107 /* MTDBlogUITests.swift */; };
+		6D529378232150280075D107 /* MTDBlogComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6D529377232150280075D107 /* MTDBlogComponents */; };
+		6D535488233F77900018D82D /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D535487233F77900018D82D /* ListViewModel.swift */; };
+		6D53548B233F7ECE0018D82D /* BlogPostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D53548A233F7ECE0018D82D /* BlogPostItem.swift */; };
+		6D89E4EC2340A916005DFCA7 /* RemoteImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6D89E4EB2340A916005DFCA7 /* RemoteImage */; };
+		6D89E4F12340AC07005DFCA7 /* BlogPostIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D89E4F02340AC07005DFCA7 /* BlogPostIdentifiable.swift */; };
+		6D8A4C7623324BDF00404C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A4C7523324BDF00404C88 /* AppDelegate.swift */; };
+		6D8A4C7823324BDF00404C88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A4C7723324BDF00404C88 /* ContentView.swift */; };
+		6D8A4C7A23324BE100404C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A4C7923324BE100404C88 /* Assets.xcassets */; };
+		6D8A4C7D23324BE100404C88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A4C7C23324BE100404C88 /* Preview Assets.xcassets */; };
+		6D8A4C8023324BE100404C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A4C7E23324BE100404C88 /* Main.storyboard */; };
+		6D8A4C8C23324BE100404C88 /* MTDBlogMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A4C8B23324BE100404C88 /* MTDBlogMacTests.swift */; };
+		6D8A4C9723324BE200404C88 /* MTDBlogMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8A4C9623324BE200404C88 /* MTDBlogMacUITests.swift */; };
+		6DB279AA2344CCF100DD8BB0 /* RemoteImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6DB279A92344CCF100DD8BB0 /* RemoteImage */; };
+		6DB279AB2344CD1C00DD8BB0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27E7552344A3C100391A80 /* AppConstants.swift */; };
+		6DB279AD2344CF7100DD8BB0 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB279AC2344CF7100DD8BB0 /* CreateView.swift */; };
+		6DF904D82332556D007D26D2 /* MTDBlogRequests in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF904D72332556D007D26D2 /* MTDBlogRequests */; };
+		6DF904DA2332558E007D26D2 /* MTDBlogComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF904D92332558E007D26D2 /* MTDBlogComponents */; };
+		6DF904DC2332558E007D26D2 /* MTDBlogRequests in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF904DB2332558E007D26D2 /* MTDBlogRequests */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D529357232149640075D107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D529338232149610075D107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D52933F232149610075D107;
+			remoteInfo = MTDBlog;
+		};
+		6D529362232149640075D107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D529338232149610075D107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D52933F232149610075D107;
+			remoteInfo = MTDBlog;
+		};
+		6D8A4C8823324BE100404C88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D529338232149610075D107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8A4C7223324BDE00404C88;
+			remoteInfo = MTDBlogMac;
+		};
+		6D8A4C9323324BE100404C88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D529338232149610075D107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D8A4C7223324BDE00404C88;
+			remoteInfo = MTDBlogMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D0E96F4233FAFFA007E0EC9 /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
+		6D27E7532344A27800391A80 /* BlogPostImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostImage.swift; sourceTree = "<group>"; };
+		6D27E7552344A3C100391A80 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		6D27E7582344AF7200391A80 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
+		6D27E75B2344B3B600391A80 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		6D3090C3233FF03F001A734A /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		6D4618F823439E25006BC3B1 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		6D529340232149610075D107 /* MTDBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTDBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D529343232149610075D107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D529345232149610075D107 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D529347232149610075D107 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D529349232149640075D107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D52934C232149640075D107 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D52934F232149640075D107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D529351232149640075D107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D529356232149640075D107 /* MTDBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D52935A232149640075D107 /* MTDBlogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDBlogTests.swift; sourceTree = "<group>"; };
+		6D52935C232149640075D107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D529361232149640075D107 /* MTDBlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDBlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D529365232149640075D107 /* MTDBlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDBlogUITests.swift; sourceTree = "<group>"; };
+		6D529367232149640075D107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D529379232152B40075D107 /* mtd-blog-components */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mtd-blog-components"; path = "../mtd-blog-components"; sourceTree = "<group>"; };
+		6D535487233F77900018D82D /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		6D53548A233F7ECE0018D82D /* BlogPostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostItem.swift; sourceTree = "<group>"; };
+		6D89E4F02340AC07005DFCA7 /* BlogPostIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostIdentifiable.swift; sourceTree = "<group>"; };
+		6D8A4C6C2332455500404C88 /* MTDBlog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MTDBlog.entitlements; sourceTree = "<group>"; };
+		6D8A4C7323324BDE00404C88 /* MTDBlogMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTDBlogMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8A4C7523324BDF00404C88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D8A4C7723324BDF00404C88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D8A4C7923324BE100404C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D8A4C7C23324BE100404C88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D8A4C7F23324BE100404C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D8A4C8123324BE100404C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8A4C8223324BE100404C88 /* MTDBlogMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MTDBlogMac.entitlements; sourceTree = "<group>"; };
+		6D8A4C8723324BE100404C88 /* MTDBlogMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDBlogMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8A4C8B23324BE100404C88 /* MTDBlogMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDBlogMacTests.swift; sourceTree = "<group>"; };
+		6D8A4C8D23324BE100404C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D8A4C9223324BE100404C88 /* MTDBlogMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDBlogMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8A4C9623324BE200404C88 /* MTDBlogMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDBlogMacUITests.swift; sourceTree = "<group>"; };
+		6D8A4C9823324BE200404C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB279AC2344CF7100DD8BB0 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		6DF904D6233253F1007D26D2 /* mtd-blog-requests */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mtd-blog-requests"; path = "../mtd-blog-requests"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D52933D232149610075D107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF904D82332556D007D26D2 /* MTDBlogRequests in Frameworks */,
+				6D529378232150280075D107 /* MTDBlogComponents in Frameworks */,
+				6D89E4EC2340A916005DFCA7 /* RemoteImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D529353232149640075D107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D52935E232149640075D107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C7023324BDE00404C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF904DC2332558E007D26D2 /* MTDBlogRequests in Frameworks */,
+				6DF904DA2332558E007D26D2 /* MTDBlogComponents in Frameworks */,
+				6DB279AA2344CCF100DD8BB0 /* RemoteImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C8423324BE100404C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C8F23324BE100404C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D27E7572344AF0900391A80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6D27E7582344AF7200391A80 /* CreateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6D27E75A2344B39300391A80 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6D27E75B2344B3B600391A80 /* ImagePickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6D3090C2233FF009001A734A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6D3090C3233FF03F001A734A /* RequestError.swift */,
+				6D27E7552344A3C100391A80 /* AppConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6D4618F623439DD6006BC3B1 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6D4618F823439E25006BC3B1 /* CreateView.swift */,
+				6D27E75A2344B39300391A80 /* Components */,
+				6D27E7572344AF0900391A80 /* ViewModel */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6D4618F723439DF1006BC3B1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				6D4618F623439DD6006BC3B1 /* Create */,
+				6D535486233F775B0018D82D /* List */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		6D529337232149610075D107 = {
+			isa = PBXGroup;
+			children = (
+				6DF904D6233253F1007D26D2 /* mtd-blog-requests */,
+				6D529379232152B40075D107 /* mtd-blog-components */,
+				6D529342232149610075D107 /* MTDBlog */,
+				6D529359232149640075D107 /* MTDBlogTests */,
+				6D529364232149640075D107 /* MTDBlogUITests */,
+				6D8A4C7423324BDF00404C88 /* MTDBlogMac */,
+				6D8A4C8A23324BE100404C88 /* MTDBlogMacTests */,
+				6D8A4C9523324BE200404C88 /* MTDBlogMacUITests */,
+				6D529341232149610075D107 /* Products */,
+				6D529376232150280075D107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D529341232149610075D107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D529340232149610075D107 /* MTDBlog.app */,
+				6D529356232149640075D107 /* MTDBlogTests.xctest */,
+				6D529361232149640075D107 /* MTDBlogUITests.xctest */,
+				6D8A4C7323324BDE00404C88 /* MTDBlogMac.app */,
+				6D8A4C8723324BE100404C88 /* MTDBlogMacTests.xctest */,
+				6D8A4C9223324BE100404C88 /* MTDBlogMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D529342232149610075D107 /* MTDBlog */ = {
+			isa = PBXGroup;
+			children = (
+				6D89E4ED2340ABDC005DFCA7 /* Model */,
+				6D3090C2233FF009001A734A /* Utils */,
+				6D4618F723439DF1006BC3B1 /* Pages */,
+				6D8A4C6C2332455500404C88 /* MTDBlog.entitlements */,
+				6D529343232149610075D107 /* AppDelegate.swift */,
+				6D529345232149610075D107 /* SceneDelegate.swift */,
+				6D529349232149640075D107 /* Assets.xcassets */,
+				6D52934E232149640075D107 /* LaunchScreen.storyboard */,
+				6D529351232149640075D107 /* Info.plist */,
+				6D52934B232149640075D107 /* Preview Content */,
+			);
+			path = MTDBlog;
+			sourceTree = "<group>";
+		};
+		6D52934B232149640075D107 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D52934C232149640075D107 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D529359232149640075D107 /* MTDBlogTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D52935A232149640075D107 /* MTDBlogTests.swift */,
+				6D52935C232149640075D107 /* Info.plist */,
+				6D0E96F4233FAFFA007E0EC9 /* ImageLoaderTests.swift */,
+			);
+			path = MTDBlogTests;
+			sourceTree = "<group>";
+		};
+		6D529364232149640075D107 /* MTDBlogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D529365232149640075D107 /* MTDBlogUITests.swift */,
+				6D529367232149640075D107 /* Info.plist */,
+			);
+			path = MTDBlogUITests;
+			sourceTree = "<group>";
+		};
+		6D529376232150280075D107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D535486233F775B0018D82D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				6D529347232149610075D107 /* ContentView.swift */,
+				6DEF6CA7233F98BC00B74657 /* ViewModel */,
+				6D535489233F7EBA0018D82D /* Components */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6D535489233F7EBA0018D82D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6D53548A233F7ECE0018D82D /* BlogPostItem.swift */,
+				6D27E7532344A27800391A80 /* BlogPostImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6D89E4ED2340ABDC005DFCA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D89E4EF2340ABF2005DFCA7 /* Extensions */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D89E4EF2340ABF2005DFCA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D89E4F02340AC07005DFCA7 /* BlogPostIdentifiable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D8A4C7423324BDF00404C88 /* MTDBlogMac */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A4C7523324BDF00404C88 /* AppDelegate.swift */,
+				6D8A4C7723324BDF00404C88 /* ContentView.swift */,
+				6DB279AC2344CF7100DD8BB0 /* CreateView.swift */,
+				6D8A4C7923324BE100404C88 /* Assets.xcassets */,
+				6D8A4C7E23324BE100404C88 /* Main.storyboard */,
+				6D8A4C8123324BE100404C88 /* Info.plist */,
+				6D8A4C8223324BE100404C88 /* MTDBlogMac.entitlements */,
+				6D8A4C7B23324BE100404C88 /* Preview Content */,
+			);
+			path = MTDBlogMac;
+			sourceTree = "<group>";
+		};
+		6D8A4C7B23324BE100404C88 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A4C7C23324BE100404C88 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D8A4C8A23324BE100404C88 /* MTDBlogMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A4C8B23324BE100404C88 /* MTDBlogMacTests.swift */,
+				6D8A4C8D23324BE100404C88 /* Info.plist */,
+			);
+			path = MTDBlogMacTests;
+			sourceTree = "<group>";
+		};
+		6D8A4C9523324BE200404C88 /* MTDBlogMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A4C9623324BE200404C88 /* MTDBlogMacUITests.swift */,
+				6D8A4C9823324BE200404C88 /* Info.plist */,
+			);
+			path = MTDBlogMacUITests;
+			sourceTree = "<group>";
+		};
+		6DEF6CA7233F98BC00B74657 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6D535487233F77900018D82D /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D52933F232149610075D107 /* MTDBlog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D52936A232149640075D107 /* Build configuration list for PBXNativeTarget "MTDBlog" */;
+			buildPhases = (
+				6D52933C232149610075D107 /* Sources */,
+				6D52933D232149610075D107 /* Frameworks */,
+				6D52933E232149610075D107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTDBlog;
+			packageProductDependencies = (
+				6D529377232150280075D107 /* MTDBlogComponents */,
+				6DF904D72332556D007D26D2 /* MTDBlogRequests */,
+				6D89E4EB2340A916005DFCA7 /* RemoteImage */,
+			);
+			productName = MTDBlog;
+			productReference = 6D529340232149610075D107 /* MTDBlog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D529355232149640075D107 /* MTDBlogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D52936D232149640075D107 /* Build configuration list for PBXNativeTarget "MTDBlogTests" */;
+			buildPhases = (
+				6D529352232149640075D107 /* Sources */,
+				6D529353232149640075D107 /* Frameworks */,
+				6D529354232149640075D107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D529358232149640075D107 /* PBXTargetDependency */,
+			);
+			name = MTDBlogTests;
+			productName = MTDBlogTests;
+			productReference = 6D529356232149640075D107 /* MTDBlogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D529360232149640075D107 /* MTDBlogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D529370232149640075D107 /* Build configuration list for PBXNativeTarget "MTDBlogUITests" */;
+			buildPhases = (
+				6D52935D232149640075D107 /* Sources */,
+				6D52935E232149640075D107 /* Frameworks */,
+				6D52935F232149640075D107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D529363232149640075D107 /* PBXTargetDependency */,
+			);
+			name = MTDBlogUITests;
+			productName = MTDBlogUITests;
+			productReference = 6D529361232149640075D107 /* MTDBlogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6D8A4C7223324BDE00404C88 /* MTDBlogMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8A4C9923324BE200404C88 /* Build configuration list for PBXNativeTarget "MTDBlogMac" */;
+			buildPhases = (
+				6D8A4C6F23324BDE00404C88 /* Sources */,
+				6D8A4C7023324BDE00404C88 /* Frameworks */,
+				6D8A4C7123324BDE00404C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTDBlogMac;
+			packageProductDependencies = (
+				6DF904D92332558E007D26D2 /* MTDBlogComponents */,
+				6DF904DB2332558E007D26D2 /* MTDBlogRequests */,
+				6DB279A92344CCF100DD8BB0 /* RemoteImage */,
+			);
+			productName = MTDBlogMac;
+			productReference = 6D8A4C7323324BDE00404C88 /* MTDBlogMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D8A4C8623324BE100404C88 /* MTDBlogMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8A4C9C23324BE200404C88 /* Build configuration list for PBXNativeTarget "MTDBlogMacTests" */;
+			buildPhases = (
+				6D8A4C8323324BE100404C88 /* Sources */,
+				6D8A4C8423324BE100404C88 /* Frameworks */,
+				6D8A4C8523324BE100404C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D8A4C8923324BE100404C88 /* PBXTargetDependency */,
+			);
+			name = MTDBlogMacTests;
+			productName = MTDBlogMacTests;
+			productReference = 6D8A4C8723324BE100404C88 /* MTDBlogMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D8A4C9123324BE100404C88 /* MTDBlogMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8A4C9F23324BE200404C88 /* Build configuration list for PBXNativeTarget "MTDBlogMacUITests" */;
+			buildPhases = (
+				6D8A4C8E23324BE100404C88 /* Sources */,
+				6D8A4C8F23324BE100404C88 /* Frameworks */,
+				6D8A4C9023324BE100404C88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D8A4C9423324BE100404C88 /* PBXTargetDependency */,
+			);
+			name = MTDBlogMacUITests;
+			productName = MTDBlogMacUITests;
+			productReference = 6D8A4C9223324BE100404C88 /* MTDBlogMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D529338232149610075D107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					6D52933F232149610075D107 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6D529355232149640075D107 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6D52933F232149610075D107;
+					};
+					6D529360232149640075D107 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6D52933F232149610075D107;
+					};
+					6D8A4C7223324BDE00404C88 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6D8A4C8623324BE100404C88 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6D8A4C7223324BDE00404C88;
+					};
+					6D8A4C9123324BE100404C88 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6D8A4C7223324BDE00404C88;
+					};
+				};
+			};
+			buildConfigurationList = 6D52933B232149610075D107 /* Build configuration list for PBXProject "MTDBlog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D529337232149610075D107;
+			packageReferences = (
+				6D89E4EA2340A916005DFCA7 /* XCRemoteSwiftPackageReference "RemoteImage" */,
+			);
+			productRefGroup = 6D529341232149610075D107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D52933F232149610075D107 /* MTDBlog */,
+				6D529355232149640075D107 /* MTDBlogTests */,
+				6D529360232149640075D107 /* MTDBlogUITests */,
+				6D8A4C7223324BDE00404C88 /* MTDBlogMac */,
+				6D8A4C8623324BE100404C88 /* MTDBlogMacTests */,
+				6D8A4C9123324BE100404C88 /* MTDBlogMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D52933E232149610075D107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D529350232149640075D107 /* LaunchScreen.storyboard in Resources */,
+				6D52934D232149640075D107 /* Preview Assets.xcassets in Resources */,
+				6D52934A232149640075D107 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D529354232149640075D107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D52935F232149640075D107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C7123324BDE00404C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8A4C8023324BE100404C88 /* Main.storyboard in Resources */,
+				6D8A4C7D23324BE100404C88 /* Preview Assets.xcassets in Resources */,
+				6D8A4C7A23324BE100404C88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C8523324BE100404C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C9023324BE100404C88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D52933C232149610075D107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3090C4233FF03F001A734A /* RequestError.swift in Sources */,
+				6D535488233F77900018D82D /* ListViewModel.swift in Sources */,
+				6D27E7622344C9C400391A80 /* ContentView.swift in Sources */,
+				6D4618F923439E25006BC3B1 /* CreateView.swift in Sources */,
+				6D27E7592344AF7200391A80 /* CreateViewModel.swift in Sources */,
+				6D27E75C2344B3B600391A80 /* ImagePickerView.swift in Sources */,
+				6D89E4F12340AC07005DFCA7 /* BlogPostIdentifiable.swift in Sources */,
+				6D53548B233F7ECE0018D82D /* BlogPostItem.swift in Sources */,
+				6D27E7562344A3C100391A80 /* AppConstants.swift in Sources */,
+				6D27E7542344A27800391A80 /* BlogPostImage.swift in Sources */,
+				6D529344232149610075D107 /* AppDelegate.swift in Sources */,
+				6D529346232149610075D107 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D529352232149640075D107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0E96F5233FAFFA007E0EC9 /* ImageLoaderTests.swift in Sources */,
+				6D52935B232149640075D107 /* MTDBlogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D52935D232149640075D107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D529366232149640075D107 /* MTDBlogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C6F23324BDE00404C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8A4C7823324BDF00404C88 /* ContentView.swift in Sources */,
+				6D27E75F2344C8D000391A80 /* BlogPostItem.swift in Sources */,
+				6DB279AD2344CF7100DD8BB0 /* CreateView.swift in Sources */,
+				6D27E7612344C8E100391A80 /* BlogPostIdentifiable.swift in Sources */,
+				6D8A4C7623324BDF00404C88 /* AppDelegate.swift in Sources */,
+				6DB279AB2344CD1C00DD8BB0 /* AppConstants.swift in Sources */,
+				6D27E75E2344C8CC00391A80 /* ListViewModel.swift in Sources */,
+				6D27E7602344C8D300391A80 /* BlogPostImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C8323324BE100404C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8A4C8C23324BE100404C88 /* MTDBlogMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A4C8E23324BE100404C88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8A4C9723324BE200404C88 /* MTDBlogMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D529358232149640075D107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D52933F232149610075D107 /* MTDBlog */;
+			targetProxy = 6D529357232149640075D107 /* PBXContainerItemProxy */;
+		};
+		6D529363232149640075D107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D52933F232149610075D107 /* MTDBlog */;
+			targetProxy = 6D529362232149640075D107 /* PBXContainerItemProxy */;
+		};
+		6D8A4C8923324BE100404C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D8A4C7223324BDE00404C88 /* MTDBlogMac */;
+			targetProxy = 6D8A4C8823324BE100404C88 /* PBXContainerItemProxy */;
+		};
+		6D8A4C9423324BE100404C88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D8A4C7223324BDE00404C88 /* MTDBlogMac */;
+			targetProxy = 6D8A4C9323324BE100404C88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D52934E232149640075D107 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D52934F232149640075D107 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6D8A4C7E23324BE100404C88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8A4C7F23324BE100404C88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D529368232149640075D107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D529369232149640075D107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D52936B232149640075D107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MTDBlog/MTDBlog.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MTDBlog/Preview Content\"";
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MTDBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D52936C232149640075D107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MTDBlog/MTDBlog.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MTDBlog/Preview Content\"";
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MTDBlog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_UIKITFORMAC = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D52936E232149640075D107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTDBlog.app/MTDBlog";
+			};
+			name = Debug;
+		};
+		6D52936F232149640075D107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTDBlog.app/MTDBlog";
+			};
+			name = Release;
+		};
+		6D529371232149640075D107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTDBlog;
+			};
+			name = Debug;
+		};
+		6D529372232149640075D107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MTDBlog;
+			};
+			name = Release;
+		};
+		6D8A4C9A23324BE200404C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MTDBlogMac/MTDBlogMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "MTDBlogMac/Preview\\ Content";
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MTDBlogMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D8A4C9B23324BE200404C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MTDBlogMac/MTDBlogMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "MTDBlogMac/Preview\\ Content";
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MTDBlogMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6D8A4C9D23324BE200404C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTDBlogMac.app/Contents/MacOS/MTDBlogMac";
+			};
+			name = Debug;
+		};
+		6D8A4C9E23324BE200404C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTDBlogMac.app/Contents/MacOS/MTDBlogMac";
+			};
+			name = Release;
+		};
+		6D8A4CA023324BE200404C88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MTDBlogMac;
+			};
+			name = Debug;
+		};
+		6D8A4CA123324BE200404C88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4L856QL76Y;
+				INFOPLIST_FILE = MTDBlogMacUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.ConnectMe.MTDBlogMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MTDBlogMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D52933B232149610075D107 /* Build configuration list for PBXProject "MTDBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D529368232149640075D107 /* Debug */,
+				6D529369232149640075D107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D52936A232149640075D107 /* Build configuration list for PBXNativeTarget "MTDBlog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D52936B232149640075D107 /* Debug */,
+				6D52936C232149640075D107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D52936D232149640075D107 /* Build configuration list for PBXNativeTarget "MTDBlogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D52936E232149640075D107 /* Debug */,
+				6D52936F232149640075D107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D529370232149640075D107 /* Build configuration list for PBXNativeTarget "MTDBlogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D529371232149640075D107 /* Debug */,
+				6D529372232149640075D107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8A4C9923324BE200404C88 /* Build configuration list for PBXNativeTarget "MTDBlogMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8A4C9A23324BE200404C88 /* Debug */,
+				6D8A4C9B23324BE200404C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8A4C9C23324BE200404C88 /* Build configuration list for PBXNativeTarget "MTDBlogMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8A4C9D23324BE200404C88 /* Debug */,
+				6D8A4C9E23324BE200404C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8A4C9F23324BE200404C88 /* Build configuration list for PBXNativeTarget "MTDBlogMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8A4CA023324BE200404C88 /* Debug */,
+				6D8A4CA123324BE200404C88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D89E4EA2340A916005DFCA7 /* XCRemoteSwiftPackageReference "RemoteImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crelies/RemoteImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D529377232150280075D107 /* MTDBlogComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MTDBlogComponents;
+		};
+		6D89E4EB2340A916005DFCA7 /* RemoteImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D89E4EA2340A916005DFCA7 /* XCRemoteSwiftPackageReference "RemoteImage" */;
+			productName = RemoteImage;
+		};
+		6DB279A92344CCF100DD8BB0 /* RemoteImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D89E4EA2340A916005DFCA7 /* XCRemoteSwiftPackageReference "RemoteImage" */;
+			productName = RemoteImage;
+		};
+		6DF904D72332556D007D26D2 /* MTDBlogRequests */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MTDBlogRequests;
+		};
+		6DF904D92332558E007D26D2 /* MTDBlogComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MTDBlogComponents;
+		};
+		6DF904DB2332558E007D26D2 /* MTDBlogRequests */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MTDBlogRequests;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6D529338232149610075D107 /* Project object */;
+}
