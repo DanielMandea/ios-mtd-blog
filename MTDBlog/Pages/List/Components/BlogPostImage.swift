@@ -26,15 +26,7 @@ struct BlogPostImage : View {
     var body: some View {
         image
             .resizable()
-            .overlay (
-                Rectangle()
-                    .fill (
-                        LinearGradient(gradient: Gradient(colors: [.clear, .black]),
-                                       startPoint: .center, endPoint: .bottom)
-                )
-                    .clipped()
-        )
+            .clipped()
             .aspectRatio(contentMode: .fill)
-            .frame(width: 320, height: 280, alignment: .top)
     }
 }

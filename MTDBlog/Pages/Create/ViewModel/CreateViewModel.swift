@@ -16,6 +16,11 @@ class CreateViewModel: ObservableObject {
     // MARK: - Published
     
     @Published var success: Bool = false
+    @Published var title: String = ""
+    @Published var subtitle: String = ""
+    @Published var imageData: Data?
+    
+    
     
     // MARK: - Private
     
@@ -26,18 +31,12 @@ class CreateViewModel: ObservableObject {
     init(blogPostService: BlogPostService) {
         self.blogPostService = blogPostService
     }
-    
-    static func validate(_ request: URLRequest, _ data: Data, _ response: URLResponse) throws -> Bool {
-        guard let httpResponse = response as? HTTPURLResponse else { throw RequestError.invalidResponse }
-        guard (200..<300).contains(httpResponse.statusCode) else { throw RequestError.statusCode(httpResponse.statusCode) }
-        return true
-    }
-    
-    
+
     // MARK: - Load
     
-    func load(for title: String?, subtitle: String?, data: Data) -> AnyCancellable {
+    func upload() -> AnyCancellable? {
         let blogPost = BlogPost(title: title, subtitle: subtitle)
+        guard let data = imageData else { return nil }
         return blogPostService.upload(blogPost: blogPost, with: data)
             .receive(on: RunLoop.main)
             .tryMap { output in

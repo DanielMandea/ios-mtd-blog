@@ -18,6 +18,7 @@
 		6D27E7612344C8E100391A80 /* BlogPostIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D89E4F02340AC07005DFCA7 /* BlogPostIdentifiable.swift */; };
 		6D27E7622344C9C400391A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529347232149610075D107 /* ContentView.swift */; };
 		6D3090C4233FF03F001A734A /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3090C3233FF03F001A734A /* RequestError.swift */; };
+		6D43F245234B8463007C88AC /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F244234B8463007C88AC /* DetailsView.swift */; };
 		6D4618F923439E25006BC3B1 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4618F823439E25006BC3B1 /* CreateView.swift */; };
 		6D529344232149610075D107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529343232149610075D107 /* AppDelegate.swift */; };
 		6D529346232149610075D107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D529345232149610075D107 /* SceneDelegate.swift */; };
@@ -84,6 +85,7 @@
 		6D27E7582344AF7200391A80 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 		6D27E75B2344B3B600391A80 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		6D3090C3233FF03F001A734A /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		6D43F244234B8463007C88AC /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		6D4618F823439E25006BC3B1 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		6D529340232149610075D107 /* MTDBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTDBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D529343232149610075D107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		6D43F0F3234B4FEC007C88AC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				6D43F244234B8463007C88AC /* DetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		6D4618F623439DD6006BC3B1 /* Create */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,7 @@
 		6D4618F723439DF1006BC3B1 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				6D43F0F3234B4FEC007C88AC /* Details */,
 				6D4618F623439DD6006BC3B1 /* Create */,
 				6D535486233F775B0018D82D /* List */,
 			);
@@ -623,6 +634,7 @@
 				6D4618F923439E25006BC3B1 /* CreateView.swift in Sources */,
 				6D27E7592344AF7200391A80 /* CreateViewModel.swift in Sources */,
 				6D27E75C2344B3B600391A80 /* ImagePickerView.swift in Sources */,
+				6D43F245234B8463007C88AC /* DetailsView.swift in Sources */,
 				6D89E4F12340AC07005DFCA7 /* BlogPostIdentifiable.swift in Sources */,
 				6D53548B233F7ECE0018D82D /* BlogPostItem.swift in Sources */,
 				6D27E7562344A3C100391A80 /* AppConstants.swift in Sources */,

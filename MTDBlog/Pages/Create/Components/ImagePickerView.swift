@@ -13,16 +13,15 @@ struct ImagePickerView: UIViewControllerRepresentable {
     
     typealias UIViewControllerType = UIImagePickerController
     
-    
-    let isShown: Binding<Bool>
-    let image: Binding<Image?>
-    let imageData: Binding<Data?>
+    var isShown: Binding<Bool>
+    var image: Binding<Image?>
+    var imageData: Binding<Data?>
     
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
         
-        let isShown: Binding<Bool>
-        let image: Binding<Image?>
-        let imageData: Binding<Data?>
+        var isShown: Binding<Bool>
+        var image: Binding<Image?>
+        var imageData: Binding<Data?>
         
         init(isShown: Binding<Bool>, image: Binding<Image?>, imageData: Binding<Data?>) {
             self.isShown = isShown

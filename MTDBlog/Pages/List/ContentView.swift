@@ -25,7 +25,6 @@ struct ContentView: View {
     init(viewModel: ListViewModel) {
         self.viewModel = viewModel
         _ = self.viewModel.load(for: Date())
-        UITableView.appearance().separatorColor = .clear
     }
     
     // MARK: - Body 
@@ -56,7 +55,11 @@ struct ContentView: View {
 private extension ContentView {
     var blogPostItems: some View {
         Section {
-            ForEach(viewModel.dataSource, content: BlogPostRow.init(blogPost: ))
+            ForEach(viewModel.dataSource) { blogPost in
+               NavigationLink(destination: DetailsView()) {
+                   BlogPostRow(blogPost: blogPost)
+                }
+            }
         }
     }
 }
@@ -67,7 +70,8 @@ private extension ContentView {
         let imageService = DefaultImageService(oauth: oauthService, configuration: DefaultServiceConfiguration(baseUrl: Constants.Api.Image.url))
         let blogPostService = DefaultBlogPostService(configuration: DefaultServiceConfiguration(baseUrl: Constants.Api.Blog.url))
         blogPostService.imageService = imageService
-        return CreateView(viewModel: CreateViewModel(blogPostService: blogPostService))
+        let viewModel = CreateViewModel(blogPostService: blogPostService)
+        return CreateView(viewModel: viewModel, isShown: $isModelPresented)
     }
 }
 

@@ -18,77 +18,38 @@ struct CreateView: View {
     
     // MARK: - State
     
-    @State private var isModelPresented = false
-    @State var showImagePicker: Bool = false
-    @State var title: String = "Title Mock"
-    @State var subtitle: String = "Title Mock"
-    @State var image: Image?
-    @State var imageData: Data?
+    @State private var image: Image?
+    @State private var isGalleryPresented = false
+    
+    // MARK: - Internal
+    
+    var isShown: Binding<Bool>?
     
     // MARK: - Init
     
-    init(viewModel: CreateViewModel) {
+    init(viewModel: CreateViewModel, isShown: Binding<Bool>?) {
         self.viewModel = viewModel
+        self.isShown = isShown
     }
     
     // MARK: - Body
     
     var body: some View {
-        VStack {
-            Spacer()
-            VStack {
-                Spacer()
-                TextField("Please enter a title", text: $title)
-                    .frame(width: 300, height: 30, alignment: .top)
-                    .padding(.leading, 8)
-                    .padding(.trailing, 8)
-                    .padding(.bottom, 8)
-                    .border(Color.black, width: 2)
-                    .clipped()
-                
-                TextField("Please enter a subtitle", text: $subtitle)
-                    .frame(width: 300, height: 30, alignment: .top)
-                    .padding(.leading, 8)
-                    .padding(.trailing, 8)
-                    .padding(.bottom, 8)
-                    .border(Color.black, width: 2)
-                    .clipped()
-                Spacer()
-                Button(action: {
-                    withAnimation {
-                        self.showImagePicker.toggle()
-                    }
-                }) {
-                    Text("Show image picker")
-                }
-                Spacer()
-                Button(action: {
-                    _ = self.viewModel.load(for: self.title, subtitle: self.subtitle, data: self.imageData ?? Data())
-                }) {
-                    Text("Upload Images")
-                }
-                Spacer()
+        
+        NavigationView {
+            Form {
+                Text("Hello Wolrd")
             }
-            .frame(width: 350, height: 300, alignment: .top)
-            .border(Color.black, width: 2)
-            Spacer()
-            image?.resizable()
-            if (showImagePicker) {
-                ImagePickerView(isShown: $showImagePicker, image: $image, imageData: $imageData)
-            }
-             Spacer()
         }
     }
-    
 }
 
-// MARK: - blogPostItems
-
+// MARK: - Preview 
 
 struct CreateView_Previews: PreviewProvider {
     static var previews: some View {
         let blogPostService = DefaultBlogPostService(configuration: DefaultServiceConfiguration(baseUrl: Constants.Api.Blog.url))
         let createViewModel = CreateViewModel(blogPostService: blogPostService)
-        return CreateView(viewModel: createViewModel)
+        return CreateView(viewModel: createViewModel, isShown: nil)
     }
 }

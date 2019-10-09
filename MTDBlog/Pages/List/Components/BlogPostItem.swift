@@ -28,37 +28,21 @@ struct BlogPostRow: View {
     var body: some View {
         VStack(alignment: .leading) {
             imageView
-            Text("\(blogPost.title ?? "NO TITLE")")
-                .fontWeight(.bold)
-                .font(.title)
-                .foregroundColor(Color.white)
-                .padding(.leading, 8)
-                .padding(.trailing, 8)
-            Text("\(blogPost.subtitle ?? "NO SUBTITLE")")
-                .fontWeight(.bold)
-                .font(.subheadline)
-                .foregroundColor(Color.white)
-                .padding(.leading, 8)
-                .padding(.trailing, 8)
-                .padding(.bottom, 8)
-                .shadow(radius: 20)
-                .clipped()
-            
+            rowTitle
+            rowSubtitle
             Spacer()
         }
-        .background(Color.black)
-        .frame(width: 320, height: 380, alignment: .top)
+//        .frame(height: 380, alignment: .top)
         .cornerRadius(20)
+        .padding(.top, 20)
         .padding(.leading, 10)
         .padding(.trailing, 10)
-        .padding(.bottom, 5)
-        .padding(.top, 20)
-        .animation(.spring())
+        .padding(.bottom, 10)
         .shadow(radius: 10)
     }
 }
 
-// MARK: - imageView
+// MARK: - Items
 
 private extension BlogPostRow {
     var imageView: some View {
@@ -70,6 +54,30 @@ private extension BlogPostRow {
         }, loadingView: {
             BlogPostImage(image: Image("functional_swift"))
         })
+    }
+}
+
+private extension BlogPostRow {
+    var rowTitle: some View {
+        Text("\(blogPost.title ?? "NO TITLE")")
+        .fontWeight(.bold)
+        .font(.title)
+        .foregroundColor(Color.white)
+        .padding(.leading, 8)
+        .padding(.trailing, 8)
+    }
+}
+
+private extension BlogPostRow {
+    var rowSubtitle: some View {
+        Text("\(blogPost.subtitle ?? "NO SUBTITLE")")
+        .fontWeight(.bold)
+        .font(.subheadline)
+        .foregroundColor(Color.white)
+        .padding(.leading, 8)
+        .padding(.trailing, 8)
+        .shadow(radius: 20)
+        .clipped()
     }
 }
 
