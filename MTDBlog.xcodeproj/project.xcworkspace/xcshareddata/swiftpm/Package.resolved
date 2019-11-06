@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "RemoteImage",
-        "repositoryURL": "https://github.com/crelies/RemoteImage",
+        "repositoryURL": "https://github.com/DanielMandea/RemoteImage.git",
         "state": {
           "branch": "master",
-          "revision": "9eb8540d3553a45df892a06db324ab5ce7861720",
+          "revision": "af07f61a2d293c5736349958bac47e8f4fe6d36e",
           "version": null
         }
       }

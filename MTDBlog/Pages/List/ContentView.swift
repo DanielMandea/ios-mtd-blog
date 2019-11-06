@@ -9,6 +9,7 @@
 import SwiftUI
 import MTDBlogRequests
 import MTDBlogComponents
+import BaseService
 
 struct ContentView: View {
     
@@ -31,8 +32,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                blogPostItems
+            Form {
+                List {
+                    blogPostItems
+                }
             }
             .listStyle(DefaultListStyle())
             .navigationBarTitle("MTD Blog 👨‍💻")
@@ -50,7 +53,7 @@ struct ContentView: View {
     }
 }
 
-// MARK: - blogPostItems
+// MARK: - Extensions
 
 private extension ContentView {
     var blogPostItems: some View {

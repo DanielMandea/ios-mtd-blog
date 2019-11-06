@@ -10,6 +10,7 @@ import UIKit
 import SwiftUI
 import MTDBlogRequests
 import Combine
+import BaseService
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

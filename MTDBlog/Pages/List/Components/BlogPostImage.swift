@@ -24,9 +24,17 @@ struct BlogPostImage : View {
     // MARK: - Body
     
     var body: some View {
-        image
-            .resizable()
-            .clipped()
-            .aspectRatio(contentMode: .fill)
+        GeometryReader { geometry in
+            ZStack(alignment: .center) {
+                VStack {
+                    self.image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                }
+                .frame(width: geometry.size.width,
+                       height: 200)
+                
+            }
+        }
     }
 }

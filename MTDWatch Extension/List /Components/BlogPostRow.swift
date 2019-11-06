@@ -1,8 +1,8 @@
 //
-//  BlogPostItem.swift
-//  MTDBlog
+//  BlogPostRow.swift
+//  MTDWatch Extension
 //
-//  Created by Daniel Mandea on 28/09/2019.
+//  Created by Daniel Mandea on 15/10/2019.
 //  Copyright © 2019 IBM. All rights reserved.
 //
 
@@ -16,6 +16,7 @@ struct BlogPostRow: View {
     // MARK: - Private
     
     private let blogPost: BlogPost
+    @State private var loading: Bool = true
     
     // MARK: - Init
     
@@ -23,7 +24,7 @@ struct BlogPostRow: View {
         self.blogPost = blogPost
     }
     
-    // MARK: - Body 
+    // MARK: - Body
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -32,13 +33,12 @@ struct BlogPostRow: View {
             rowSubtitle
             Spacer()
         }
-//        .frame(height: 380, alignment: .top)
+        .frame(height: 200, alignment: .top)
+        .padding(.leading, 8)
+        .padding(.trailing, 8)
+        .padding(.top, 8)
+        .padding(.bottom, 8)
         .cornerRadius(20)
-        .padding(.top, 20)
-        .padding(.leading, 10)
-        .padding(.trailing, 10)
-        .padding(.bottom, 10)
-        .shadow(radius: 10)
     }
 }
 
@@ -52,7 +52,7 @@ private extension BlogPostRow {
         }, imageView: { image in
             BlogPostImage(image: image)
         }, loadingView: {
-            BlogPostImage(image: Image("functional_swift"))
+            LoadingView(isShowing: self.$loading)
         })
     }
 }
@@ -63,8 +63,6 @@ private extension BlogPostRow {
         .fontWeight(.bold)
         .font(.title)
         .foregroundColor(Color.white)
-        .padding(.leading, 8)
-        .padding(.trailing, 8)
     }
 }
 
@@ -74,9 +72,6 @@ private extension BlogPostRow {
         .fontWeight(.bold)
         .font(.subheadline)
         .foregroundColor(Color.white)
-        .padding(.leading, 8)
-        .padding(.trailing, 8)
-        .shadow(radius: 20)
         .clipped()
     }
 }
