@@ -1,2 +1,2 @@
 # ios-mtd-blog
-A swift UI blog for helper that helps me upload content on mtdtechnology.net
+A swift UI blog App helps me uploading content on `mtd-blog`
